@@ -1,0 +1,91 @@
+JSON iterate overall for loops 
+
+var student={
+"name":"roshan akthar",
+"age":"22",  
+"year":"2001",
+"address":"batlagundu",
+}
+console.log(student);
+
+Resume data in JSON format
+
+var Resume={
+"name":"Roshan Akthar",
+"age":"22",  
+"year":"2001",
+"branch":"B.E",
+"department":"Civil Engineer",
+"email":"roshanaktharas7948@gmail.com",
+"ph.no":"7448710214",
+"location":{
+   "address":"5/6/52 ganthi nagar",
+   "postalcode":"624202",
+   "city":"Batlagundu",
+},
+"eduction":[
+  {
+  "institution1":"Bachelor of engineering (BE-civil) graduated in 2022 with80.05% of marks,PSNA College Of Engineering and Technology,Dindigul",
+  "institution2":"HSC in 2018 with 67.67% of marks,Velammal Matric.Hr.Sec.School,Theni,SSLC in 2016 with 84.6% of marks",
+  "institution3":"SSLC in 2016 with 84.6% of marks,NSVV Matric.Hr.Sec.School,Pattiveeranpatti",
+  }
+],
+"skill":"Javascript,HTML,CSS,Bootstrap,Reactjs,SQL,NOSQL,Nodejs",
+"languages":[
+  {
+    "language":"English,Tamil",
+    "fluency":"Full professional proficiency",
+  }
+]
+}
+console.log(Resume);
+
+
+Different between WINDOW, SCREEN, and DOCUMENT IN Javascript:
+
+
+DOCUMENT:
+•	It is represent any HTML document or web page is loaded in browser.
+•	It is loaded inside the window.
+•	Document object mode are img[], layer[], links[], forms[].
+•	The document object represents the whole HTML document as a tree of objects (HTML, HEAD, BODY, <>TAGS).
+•	All the tags, element with attributes in HTML are part of the document.
+•	We can access the document from a window  using the window.document.
+•	Ex: document.open ()create a blank document within the window.
+PROPERTY:
+1.	BODY:  It return the content of the body element.
+2.	FORMS:  It return all the element of the form.
+3.	TITLE:  It return the title element of the document.
+4.	HEAD:  It return the head element of the document.
+5.	IMAGES:   It return the collection of <img>  elements in the document.
+6.	LINK:  It return all <a> elements that have a href attribute.
+
+WINDOW:
+•	It represent a javascript browser that displays the contents of the webpage.
+•	It is the very first object that is loaded in he browser.
+•	Browser object model (window) are frames, history, location, screen.
+•	The window is the part of browser object model not document object model.
+•	We can access the window from window only.
+•	Function, variables of javascript are member of the window object.
+•	Ex: window.open() open a window.
+Property:
+1.	CONSOLE:  It return a reference to the console object  which provide access to the browser debugging console.
+2.	FRAMES:  It represent an array that contains all the frames of a widow.
+3.	LENGTH:  It represent the number of frames in the current window.
+4.	CLOSED: Boolean value that represent whether the window is closed or not.
+
+screen:
+> Screen is a small information object about physical screen dimensions .
+> It can be used to display screen width, height, colorDepth, pixelDepth etc. 
+> It is not mandatory to write window prefix with screen object.
+> It can be written without window prefix.
+
+1.screen properties width and height are the full screen.
+
+2.screen properties availWidth and availHeight omit the toolbar.
+
+> The portion of a screen displaying the rendered document is the viewport in JavaScript,
+  which is potentially confusing because we call an application's portion of the screen a window when talking about 
+  interactions with the operating system. 
+  The getBoundingClientRect() method of any document element will return an object with top, left, bottom, and right
+  properties describing the location of the element in the viewport.
